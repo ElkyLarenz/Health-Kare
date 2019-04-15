@@ -1,0 +1,61 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="AFTER.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="0" />
+    <property name="AFTER.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="true" />
+    <property name="AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_STATUS_BAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="1" />
+    <property name="BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR" value="true" />
+    <property name="ColorChooser.RecentColors" value="13-204-53-255,,,15-214-212-255,,,182-82-197-255,,,219-60-73-255,,,125-155-104-255,,,160-160-160-255,,,53-95-160-255,,,160-136-52-255,,,0-122-155-255,,,67-160-0-255,,,113-164-198-255,,,219-180-0-255,,,5-219-0-255" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.79361176" />
+    <property name="CommittedChanges.SplitterProportions.0" value="700" />
+    <property name="CommittedChanges.SplitterProportions.1" value="500" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="Darcula.SavedEditorTheme" value="_@user_Darcula" />
+    <property name="Default.SavedEditorTheme" value="_@user_Default" />
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="true" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="IJ_BASE_PACKAGE" value="" />
+    <property name="SettingsSearchHistory" value="Tab,Indent" />
+    <property name="TrendingPluginsSearchHistory" value="database" />
+    <property name="android-component-compatibility-check" value="1547588814826" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.1" value="800" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
+    <property name="create.project.preferred.importer" value="Existing Sources" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Documents/Mysql-Java&#10;C:/Program Files/Java/jdk-10.0.2&#10;C:/Users/ff1356rw/Desktop/CS 410&#10;C:/Users/ff1356rw/IdeaProjects/CS410-Numbers-Game&#10;W:/ERatliff16&#10;C:/Users/ff1356rw/Documents/GitHub/CS410-Numbers-Game&#10;C:/Users/ff1356rw/Documents/GitHub/Route-Generation&#10;C:/Users/ff1356rw/Documents/GitHub&#10;C:/Users/ff1356rw/IdeaProjects/Route-Generation&#10;C:/Users/ff1356rw/IdeaProjects/RouteGeneration/src&#10;C:/Users/ff1356rw/Documents/GitHub/Route-Generation/src&#10;C:/Users/ff1356rw&#10;C:/Users/ff1356rw/Desktop/Fall 2018 Semester/CS 375 (Computer Systems)&#10;C:/&#10;C:/Users/ff1356rw/Documents/Material_Theme-2.8.3/Material Theme/lib/mixpanel-java-1.4.4.jar&#10;C:/Users/ff1356rw/Documents/Material_Theme-2.8.3/Material Theme" />
+    <property name="file.gist.reindex.count" value="254" />
+    <property name="fileTypeChangedCounter" value="2" />
+    <property name="installed.kotlin.plugin.version" value="1.3.11-release-IJ2018.3-1" />
+    <property name="jdk.selected.JAVA_MODULE" value="10" />
+    <property name="last.imported.location" value="$USER_HOME$/Documents/GitHub/CS410-Numbers-Game" />
+    <property name="lastTip" value="40" />
+    <property name="learn.toolwindow.button.info.shown" value="true" />
+    <property name="project.wizard.group" value="JAVA_MODULE" />
+    <property name="project.wizard.template" value="Java" />
+    <property name="selected.color.option.type" value="LOCAL_VARIABLE_ATTRIBUTES" />
+  </component>
+</application>
