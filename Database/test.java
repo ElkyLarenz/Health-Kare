@@ -32,7 +32,7 @@ public class test {
         retrieveChildAddress();
         System.out.println("");
         System.out.println("-------------------------------------------------------------------------------------------------------------");
-        retrieveConflict();
+        retrieveBehavior();
 
 
     }
@@ -107,7 +107,7 @@ public class test {
 
     }
 
-    public static void retrieveConflict()
+    public static void retrieveBehavior()
     {
         try
         {
@@ -115,13 +115,16 @@ public class test {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "Class410");
             System.out.println("Database connected!");
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("select child.child_id, child.Fname, child.Lname, Conflict.D, Conflict.T, Conflict.Location, Conflict.Behav_type, Conflict.Des \n" +
-                    "from CHILD right join Conflict ON CHILD.child_id = Conflict.child_id;");
+            ResultSet rs = stmt.executeQuery("select child.child_id, child.Fname, child.Lname, Behavior.D, Behavior.T, " +
+                    "Behavior.Location, Behavior.Behav_type, Behavior.Des, Behavior.cnt, Behavior.Staff_id \n" +
+                    "from CHILD right join Behavior ON CHILD.child_id = Behavior.child_id;");
             while (rs.next())
                 System.out.println("ID: " + rs.getInt(1) + " First Name: " + rs.getString(2)
                         + " Last Name: " + rs.getString(3) + " Date: " + rs.getDate(4)
                         + " Time: " + rs.getTime(5) + " Location: " + rs.getString(6)
-                        + " Action: " + rs.getString(7) + " Description: " + rs.getString(8));
+                        + " Action: " + rs.getString(7) + " Description: " + rs.getString(8)
+                        + " count: " + rs.getInt(9)
+                        + " Staff ID: " + rs.getInt(10));
             con.close();
         }   catch (Exception e){System.out.println("Cannot connect the database!" + e);}
 
