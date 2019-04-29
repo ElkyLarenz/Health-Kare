@@ -1,6 +1,9 @@
 package Database;
 
+import Users.Staff;
+
 import java.sql.*;
+import java.util.ArrayList;
 
 //maybe use firebase for authentication and my sql for the database
 public class test {
@@ -129,6 +132,13 @@ public class test {
         }   catch (Exception e){System.out.println("Cannot connect the database!" + e);}
 
     }
+
+  /*  private void
+    public ArrayList<Staff>userArrayList()
+    {
+        ArrayList<Staff> userArrayList = new ArrayList<>();
+
+    }*/
 
 }
 
