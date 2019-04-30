@@ -135,6 +135,8 @@ public class StaffLogin extends javax.swing.JFrame {
             if(rs.next())
             {
                 JOptionPane.showMessageDialog(null, "Welcome " + nameTxtFld.getText(), "Login Successful", JOptionPane.PLAIN_MESSAGE);
+                StaffMenu.main(new String[] {});
+                this.dispose();
             }
             else
             {
@@ -147,8 +149,7 @@ public class StaffLogin extends javax.swing.JFrame {
         {
             JOptionPane.showMessageDialog(null, e);
         }
-        StaffMenu.main(new String[] {});
-        this.dispose();
+
     }//GEN-LAST:event_loginBtnActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
