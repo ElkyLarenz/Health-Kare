@@ -1,11 +1,11 @@
 package Users;
 
-public class Staff
+public class Child
 {
      private int StudentID, Age;
      private String FirstName, LastName;
 
-     public Staff(int studentID, String FirstName, String LastName, int Age)
+     public Child(int studentID, String FirstName, String LastName, int Age)
      {
          this.StudentID = studentID;
          this.FirstName = FirstName;
@@ -14,7 +14,13 @@ public class Staff
 
      }
 
-     public int getStudentID()
+    @Override
+    public String toString() {
+        String bk = (StudentID + " " + FirstName + " " + LastName + " " + Age);
+        return bk;
+    }
+
+    public int getStudentID()
      {
          return StudentID;
      }

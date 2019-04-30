@@ -1,5 +1,7 @@
 package Function;
 
+import Users.Child;
+
 public class session {
     Staff currentStaff;
     Child currentChild;

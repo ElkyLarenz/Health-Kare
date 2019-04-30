@@ -10,6 +10,9 @@ public class Staff {
         fName = a;
         lName = b;
         id = c;
+        System.out.print(fName + " " + lName + " " + id);
+
+
     }
 
     public String getfName()
