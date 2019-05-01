@@ -189,7 +189,11 @@ public class StaffMenu extends javax.swing.JFrame {
         );
 
         selectBtn.setText("Select");
-
+        selectBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selectBtnActionPerformed(evt);
+            }
+        });
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -210,7 +214,9 @@ public class StaffMenu extends javax.swing.JFrame {
                 .addComponent(searchTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addComponent(displayPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+
         );
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -227,6 +233,7 @@ public class StaffMenu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(displayPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
         System.out.printf(childList.size() + " \n");
         for(int i = 0; i < childList.size();i++)
         {   System.out.printf("In Loop");
@@ -242,33 +249,40 @@ public class StaffMenu extends javax.swing.JFrame {
             studentInfoTbl.setValueAt(tempAge, i, 4);
         }
 
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void sortCombBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sortCombBoxActionPerformed
-        
+
     }//GEN-LAST:event_sortCombBoxActionPerformed
 
     private void inputBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputBtnActionPerformed
-        
+
     }//GEN-LAST:event_inputBtnActionPerformed
 
     private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
-        
+
     }//GEN-LAST:event_saveBtnActionPerformed
 
     private void searchTxtFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchTxtFldActionPerformed
-        
+
     }//GEN-LAST:event_searchTxtFldActionPerformed
 
     private void LogoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutBtnActionPerformed
         Main.main(new String[] {});
         this.dispose();
     }//GEN-LAST:event_LogoutBtnActionPerformed
+    private void selectBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutBtnActionPerformed
+
+        ChildMenu.main(new String[] {});
+        this.dispose();
+    }//GEN-LAST:event_LogoutBtnActionPerformed
 
     public static void main(String args[]) {
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

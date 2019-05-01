@@ -3,16 +3,38 @@ package GUI;
 
 import GUI.*;
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class ChildMenu extends javax.swing.JFrame {
 
     public ChildMenu() {
-
-
+        /*try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "Class410");
+            System.out.println("Database connected!");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select child.child_id, child.Fname, child.Lname, Behavior.D, Behavior.T, " +
+                    "Behavior.Location, Behavior.Behav_type, Behavior.Des, Behavior.cnt, Behavior.Staff_id \n" +
+                    "from CHILD right join Behavior ON CHILD.child_id = Behavior.child_id limit 1;");
+            while (rs.next())
+                System.out.println("ID: " + rs.getInt(1) + " First Name: " + rs.getString(2)
+                        + " Last Name: " + rs.getString(3) + " Date: " + rs.getDate(4)
+                        + " Time: " + rs.getTime(5) + " Location: " + rs.getString(6)
+                        + " Action: " + rs.getString(7) + " Description: " + rs.getString(8)
+                        + " count: " + rs.getInt(9)
+                        + " Staff ID: " + rs.getInt(10));
+            con.close();
+        }   catch (Exception e){System.out.println("Cannot connect the database!" + e);}
+*/
         initComponents();
         this.setVisible(true);
         this.setResizable(false);
         displayPnl.setVisible(false);
+
     }
 
     @SuppressWarnings("unchecked")
@@ -53,14 +75,15 @@ public class ChildMenu extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         elopeTbl = new javax.swing.JTable();
 
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         menuPnl.setBackground(new java.awt.Color(255, 255, 255));
 
         nameLbl.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 20)); // NOI18N
         nameLbl.setForeground(new java.awt.Color(44, 62, 80));
-        nameLbl.setText("Name");
 
+        nameLbl.setText("Name");
         studtIDLbl.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         studtIDLbl.setForeground(new java.awt.Color(127, 140, 141));
         studtIDLbl.setText("StudentID");
