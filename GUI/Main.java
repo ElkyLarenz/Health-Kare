@@ -1,17 +1,6 @@
 package GUI;
 
-import Function.session;
-
 public class Main extends javax.swing.JFrame {
-
-    session staffSession;
-
-    public void createSession(String fn, String ln, int ID)
-    {
-        staffSession = new session;
-
-
-    }
 
     public Main() {
         initComponents();

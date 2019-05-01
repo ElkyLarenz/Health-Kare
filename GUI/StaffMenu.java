@@ -1,6 +1,6 @@
 package GUI;
 
-import Users.Child;
+import Function.Child;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
