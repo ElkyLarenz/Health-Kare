@@ -51,6 +51,20 @@ public class AdminMenu extends javax.swing.JFrame {
         passLbl = new javax.swing.JLabel();
         credLbl = new javax.swing.JLabel();
         CredTxtFld = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        contactTxtFld1 = new javax.swing.JTextField();
+        dobLbl = new javax.swing.JLabel();
+        addyLbl1 = new javax.swing.JLabel();
+        contactLbl1 = new javax.swing.JLabel();
+        addStudentBtn = new javax.swing.JButton();
+        ageTxtFld = new javax.swing.JTextField();
+        dobTxtFld = new javax.swing.JTextField();
+        ageLbl = new javax.swing.JLabel();
+        nameLbl1 = new javax.swing.JLabel();
+        nameTxtFld1 = new javax.swing.JTextField();
+        addyTxtFld1 = new javax.swing.JTextField();
+        studentIDTxtFld = new javax.swing.JTextField();
+        studentLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -255,6 +269,124 @@ public class AdminMenu extends javax.swing.JFrame {
             }
         });
 
+        jPanel3.setPreferredSize(new java.awt.Dimension(490, 410));
+
+        contactTxtFld1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contactTxtFld1ActionPerformed(evt);
+            }
+        });
+
+        dobLbl.setText("Date of Birth:");
+
+        addyLbl1.setText("Address:");
+
+        contactLbl1.setText("Contact:");
+
+        addStudentBtn.setText("Add Student");
+
+        ageTxtFld.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ageTxtFldActionPerformed(evt);
+            }
+        });
+
+        dobTxtFld.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dobTxtFldActionPerformed(evt);
+            }
+        });
+
+        ageLbl.setText("Age:");
+
+        nameLbl1.setText("Name:");
+
+        nameTxtFld1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameTxtFld1ActionPerformed(evt);
+            }
+        });
+
+        addyTxtFld1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addyTxtFld1ActionPerformed(evt);
+            }
+        });
+
+        studentIDTxtFld.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                studentIDTxtFldActionPerformed(evt);
+            }
+        });
+
+        studentLbl.setText("StudentID:");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(99, 99, 99)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(addStudentBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(contactLbl1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(contactTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(addyLbl1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(addyTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(dobLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(dobTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(ageLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ageTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(studentLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(studentIDTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(nameLbl1)
+                        .addGap(71, 71, 71)
+                        .addComponent(nameTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(99, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nameLbl1)
+                    .addComponent(nameTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(studentLbl)
+                    .addComponent(studentIDTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ageLbl)
+                    .addComponent(ageTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dobLbl)
+                    .addComponent(dobTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addyLbl1)
+                    .addComponent(addyTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(contactLbl1)
+                    .addComponent(contactTxtFld1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(80, 80, 80)
+                .addComponent(addStudentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -266,7 +398,6 @@ public class AdminMenu extends javax.swing.JFrame {
                         .addComponent(credLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CredTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(addEmplyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(contactLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -294,8 +425,14 @@ public class AdminMenu extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(nameLbl)
                         .addGap(71, 71, 71)
-                        .addComponent(nameTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(nameTxtFld, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addEmplyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(99, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,6 +472,11 @@ public class AdminMenu extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addComponent(addEmplyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout displayPnl2Layout = new javax.swing.GroupLayout(displayPnl2);
@@ -520,6 +662,30 @@ public class AdminMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CredTxtFldActionPerformed
 
+    private void contactTxtFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactTxtFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contactTxtFld1ActionPerformed
+
+    private void ageTxtFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ageTxtFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ageTxtFldActionPerformed
+
+    private void dobTxtFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dobTxtFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dobTxtFldActionPerformed
+
+    private void nameTxtFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameTxtFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameTxtFld1ActionPerformed
+
+    private void addyTxtFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addyTxtFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addyTxtFld1ActionPerformed
+
+    private void studentIDTxtFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentIDTxtFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_studentIDTxtFldActionPerformed
+
     public void initialDisp(){
         displayPnl.setVisible(true);
         displayPnl.removeAll();
@@ -539,22 +705,32 @@ public class AdminMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CredTxtFld;
     private javax.swing.JButton addEmplyBtn;
+    private javax.swing.JButton addStudentBtn;
     private javax.swing.JButton addUserBtn;
     private javax.swing.JLabel addUserLbl;
     private javax.swing.JLabel addyLbl;
+    private javax.swing.JLabel addyLbl1;
     private javax.swing.JTextField addyTxtFld;
+    private javax.swing.JTextField addyTxtFld1;
+    private javax.swing.JLabel ageLbl;
+    private javax.swing.JTextField ageTxtFld;
     private javax.swing.JComboBox<String> choiceComBox;
     private javax.swing.JLabel cityLbl;
     private javax.swing.JTextField cityTxtFld;
     private javax.swing.JLabel contactLbl;
+    private javax.swing.JLabel contactLbl1;
     private javax.swing.JTextField contactTxtFld;
+    private javax.swing.JTextField contactTxtFld1;
     private javax.swing.JLabel credLbl;
     private javax.swing.JPanel displayPnl;
     private javax.swing.JPanel displayPnl2;
+    private javax.swing.JLabel dobLbl;
+    private javax.swing.JTextField dobTxtFld;
     private javax.swing.JLabel emailLbl;
     private javax.swing.JTextField emailTxtFld;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblNews;
     private javax.swing.JLabel lblNews1;
     private javax.swing.JLabel lblNews2;
@@ -563,9 +739,13 @@ public class AdminMenu extends javax.swing.JFrame {
     private javax.swing.JLabel manageLbl;
     private javax.swing.JPanel menuPnl;
     private javax.swing.JLabel nameLbl;
+    private javax.swing.JLabel nameLbl1;
     private javax.swing.JTextField nameTxtFld;
+    private javax.swing.JTextField nameTxtFld1;
     private javax.swing.JLabel passLbl;
     private javax.swing.JTextField passTxtFld;
+    private javax.swing.JTextField studentIDTxtFld;
+    private javax.swing.JLabel studentLbl;
     private javax.swing.JLabel titleLbl;
     private javax.swing.JPanel titlePnl;
     private javax.swing.JButton viewUsersBtn;
