@@ -1,15 +1,14 @@
 
 package GUI;
 
-import GUITest.*;
-import GUI.*;
-import GUITest.*;
 import GUI.*;
 import java.awt.Color;
 
 public class ChildMenu extends javax.swing.JFrame {
 
     public ChildMenu() {
+
+
         initComponents();
         this.setVisible(true);
         this.setResizable(false);

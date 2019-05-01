@@ -1,11 +1,44 @@
 package GUI;
 
-import GUITest.*;
 import GUI.*;
+import Function.Child;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class StaffMenu extends javax.swing.JFrame {
-
+    ArrayList<Child> childList = new ArrayList<>();
     public StaffMenu() {
+        String sql = "select Child_id, fName, lName, age from Child";
+
+        try{
+
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "Class410");
+            System.out.println("Database connected!");
+            PreparedStatement stmt = con.prepareStatement(sql);
+
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next())
+            {
+                Child child = new Child(rs.getInt("Child_id"), rs.getString("Fname"), rs.getString("Lname"), rs.getInt("Age"));
+                childList.add(child);
+
+                System.out.println(child.toString());
+            }
+
+            con.close();
+
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null, e);
+        }
+
         initComponents();
         this.setVisible(true);
         this.setResizable(false);
@@ -194,6 +227,20 @@ public class StaffMenu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(displayPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+        System.out.printf(childList.size() + " \n");
+        for(int i = 0; i < childList.size();i++)
+        {   System.out.printf("In Loop");
+            Child temp = childList.get(i);
+            int tempID = temp.getStudentID();
+            System.out.printf(tempID + " \n");
+            String tempF = temp.getFirstName();
+            String tempL = temp.getLastName();
+            int tempAge = temp.getAge();
+            studentInfoTbl.setValueAt(tempID, i, 1);
+            studentInfoTbl.setValueAt(tempF, i, 2);
+            studentInfoTbl.setValueAt(tempL, i, 3);
+            studentInfoTbl.setValueAt(tempAge, i, 4);
+        }
 
         pack();
         setLocationRelativeTo(null);
