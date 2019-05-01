@@ -16,14 +16,12 @@ public class BehavSpecMenu extends javax.swing.JFrame {
         titlePnl = new javax.swing.JPanel();
         titleLbl = new javax.swing.JLabel();
         menuPnl = new javax.swing.JPanel();
-        getDataBtn = new javax.swing.JButton();
-        getDataLbl = new javax.swing.JLabel();
         viewDataLbl = new javax.swing.JLabel();
         viewDataBtn = new javax.swing.JButton();
-        analyzDataBtn = new javax.swing.JButton();
-        analyzDataLbl = new javax.swing.JLabel();
+        getDataBtn = new javax.swing.JButton();
+        getDataLbl = new javax.swing.JLabel();
         logOutBtn = new javax.swing.JButton();
-        displayPnl = new javax.swing.JPanel();
+        displayPnl = new javax.swing.JLayeredPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,21 +51,6 @@ public class BehavSpecMenu extends javax.swing.JFrame {
 
         menuPnl.setBackground(new java.awt.Color(255, 255, 255));
 
-        getDataBtn.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
-        getDataBtn.setForeground(new java.awt.Color(44, 62, 80));
-        getDataBtn.setText("Get Data");
-        getDataBtn.setContentAreaFilled(false);
-        getDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getDataBtn.setFocusable(false);
-        getDataBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                getDataBtnActionPerformed(evt);
-            }
-        });
-
-        getDataLbl.setBackground(new java.awt.Color(0, 0, 0));
-        getDataLbl.setOpaque(true);
-
         viewDataLbl.setBackground(new java.awt.Color(255, 255, 255));
         viewDataLbl.setOpaque(true);
 
@@ -84,21 +67,21 @@ public class BehavSpecMenu extends javax.swing.JFrame {
             }
         });
 
-        analyzDataBtn.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
-        analyzDataBtn.setForeground(new java.awt.Color(44, 62, 80));
-        analyzDataBtn.setText("Analyze Data");
-        analyzDataBtn.setContentAreaFilled(false);
-        analyzDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        analyzDataBtn.setFocusable(false);
-        analyzDataBtn.setPreferredSize(new java.awt.Dimension(100, 27));
-        analyzDataBtn.addActionListener(new java.awt.event.ActionListener() {
+        getDataBtn.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
+        getDataBtn.setForeground(new java.awt.Color(44, 62, 80));
+        getDataBtn.setText("Get Data");
+        getDataBtn.setContentAreaFilled(false);
+        getDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getDataBtn.setFocusable(false);
+        getDataBtn.setPreferredSize(new java.awt.Dimension(100, 27));
+        getDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                analyzDataBtnActionPerformed(evt);
+                getDataBtnActionPerformed(evt);
             }
         });
 
-        analyzDataLbl.setBackground(new java.awt.Color(255, 255, 255));
-        analyzDataLbl.setOpaque(true);
+        getDataLbl.setBackground(new java.awt.Color(255, 255, 255));
+        getDataLbl.setOpaque(true);
 
         logOutBtn.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
         logOutBtn.setForeground(new java.awt.Color(44, 62, 80));
@@ -117,31 +100,25 @@ public class BehavSpecMenu extends javax.swing.JFrame {
         menuPnl.setLayout(menuPnlLayout);
         menuPnlLayout.setHorizontalGroup(
             menuPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(analyzDataBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(analyzDataLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(viewDataBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(viewDataLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(getDataBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
             .addComponent(getDataLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(viewDataBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(viewDataLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(logOutBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         menuPnlLayout.setVerticalGroup(
             menuPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuPnlLayout.createSequentialGroup()
                 .addComponent(getDataBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(getDataLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(50, 50, 50)
                 .addComponent(viewDataBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(viewDataLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(analyzDataBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(analyzDataLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 186, Short.MAX_VALUE)
                 .addComponent(logOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
+                .addGap(50, 50, 50))
         );
 
         javax.swing.GroupLayout displayPnlLayout = new javax.swing.GroupLayout(displayPnl);
@@ -162,39 +139,36 @@ public class BehavSpecMenu extends javax.swing.JFrame {
             .addComponent(titlePnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(menuPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(displayPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(displayPnl))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(titlePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(menuPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(displayPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(displayPnl))))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void getDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getDataBtnActionPerformed
-
-    }//GEN-LAST:event_getDataBtnActionPerformed
-
     private void viewDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDataBtnActionPerformed
 
     }//GEN-LAST:event_viewDataBtnActionPerformed
-
-    private void analyzDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_analyzDataBtnActionPerformed
-        
-    }//GEN-LAST:event_analyzDataBtnActionPerformed
 
     private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
         Main.main(new String[] {});
         this.dispose();
     }//GEN-LAST:event_logOutBtnActionPerformed
+
+    private void getDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getDataBtnActionPerformed
+
+    }//GEN-LAST:event_getDataBtnActionPerformed
 
     public static void main(String args[]) {
         
@@ -207,9 +181,7 @@ public class BehavSpecMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton analyzDataBtn;
-    private javax.swing.JLabel analyzDataLbl;
-    private javax.swing.JPanel displayPnl;
+    private javax.swing.JLayeredPane displayPnl;
     private javax.swing.JButton getDataBtn;
     private javax.swing.JLabel getDataLbl;
     private javax.swing.JButton logOutBtn;
